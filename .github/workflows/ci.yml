@@ -1,9 +1,10 @@
-name: Cl
-on:
- push:
-  branches: main
+ name: Cl
+ on:
+  push:
+   branches: main
   pull_request:
-
+   branches: main
+   
   jobs:
    build:
     runs-on: ubuntu-latest
@@ -13,7 +14,7 @@ on:
   - name: Use Node.js
   uses: actions/setup-node@v2
   with:
-  node-version: '14'
-   -run: npm instal
-   -run: npm test
+   node-version: '14'
+   - run: npm instal
+   - run: npm test
   
